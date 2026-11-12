@@ -33,11 +33,11 @@ if (-not $repoExists) {
 Write-Host "==> Initializing git and pushing portfolio files..." -ForegroundColor Cyan
 if (-not (Test-Path ".git")) {
     git init
-    git branch -M main
 }
 
 git add .
 git commit -m "Deploy Mahmoud Karem portfolio website" --allow-empty
+git branch -M main
 git remote remove origin 2>$null
 git remote add origin "https://github.com/Mahmoud-Karem/$repoName.git"
 git push -u origin main --force
