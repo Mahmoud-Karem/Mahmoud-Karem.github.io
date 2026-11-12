@@ -143,7 +143,7 @@ const translations = {
     }
 };
 
-let currentLang = localStorage.getItem('mk_portfolio_lang') || 'ar';
+let currentLang = localStorage.getItem('mk_portfolio_lang') || 'en';
 
 function applyLanguage(lang) {
     const html = document.documentElement;
@@ -155,10 +155,10 @@ function applyLanguage(lang) {
     
     if (lang === 'en') {
         body.classList.add('lang-en');
-        label.textContent = 'العربية';
+        label.innerHTML = '🇸🇦 العربية';
     } else {
         body.classList.remove('lang-en');
-        label.textContent = 'English';
+        label.innerHTML = '🌐 English';
     }
     
     const dict = translations[lang];
