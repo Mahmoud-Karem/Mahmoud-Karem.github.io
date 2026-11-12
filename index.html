@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahmoud Karem Zamel | مهندس برمجيات مدمجة واستشارات هندسية</title>
+    <meta name="description" content="الموقع التعريفي للمهندس محمود كارم زامل - مهندس برمجيات مدمجة وسيارات، إشراف على مشاريع التخرج، تدريس مقررات جامعية، وتطوير كود STM32, ESP32, AVR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#hero" class="brand">
+                <span class="brand-code">&lt;MK/&gt;</span>
+                <span class="brand-name" data-i18n="brand_name">م. محمود كارم زامل</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#services" data-i18n="nav_services">الخدمات</a>
+                <a href="#projects" data-i18n="nav_projects">المشاريع</a>
+                <a href="#teaching" data-i18n="nav_teaching">التدريس وLearn++</a>
+                <a href="#experience" data-i18n="nav_experience">الخبرة المهنية</a>
+                <a href="#contact" class="btn-primary nav-cta" data-i18n="nav_contact">تواصل معي</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="lang-toggle" class="btn-lang" title="Toggle Language">
+                    <span id="lang-label">English</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="badge-tag" data-i18n="hero_badge">
+                    ⚡ مهندس برمجيات مدمجة وسيارات | فاليو وساي فيجن سابقاً
+                </div>
+                <h1 class="hero-title" data-i18n="hero_title">
+                    أساعدك في بناء وتطوير <span class="highlight">الأنظمة المدمجة</span> وإتقان كود مشاريع التخرج باحترافية
+                </h1>
+                <p class="hero-desc" data-i18n="hero_desc">
+                    خريج هندسة الإلكترونيات والاتصالات (المركز الأول على الدفعة بتقدير ممتاز مع مرتبة الشرف)، مهندس برمجيات نظم مدمجة للسيارات Tier-1 (Valeo & Si-Vision)، ومؤسس منصة Learn++ التعليمية. أقدم إشرافاً هندسياً لمشاريع التخرج، تدريساً لمقررات الجامعات السعودية، وتطويراً لأكواد STM32 وESP32 وAUTOSAR.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn-primary" data-i18n="cta_hire">ابدأ مشروعك أو استشارتك</a>
+                    <a href="#projects" class="btn-secondary" data-i18n="cta_projects">تصفح أعمالي على GitHub</a>
+                    <a href="https://www.youtube.com/@learnplusplus-mahmoudkarem" target="_blank" rel="noopener" class="btn-yt">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        <span>Learn++</span>
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+3</span>
+                        <span class="stat-label" data-i18n="stat_exp">سنوات خبرة بشركات عالمية</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label" data-i18n="stat_rank">المركز الأول على دفعة الهندسة</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">+10</span>
+                        <span class="stat-label" data-i18n="stat_proj">مشاريع مفتوحة المصدر</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label" data-i18n="stat_sat">دعم فني وتدريب على المناقشة</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="card-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="card-title">mahmoud_firmware.c</span>
+                    </div>
+                    <pre class="code-block"><code><span class="c-keyword">#include</span> <span class="c-string">&lt;embedded_master.h&gt;</span>
+
+<span class="c-type">void</span> <span class="c-func">deliver_engineering_excellence</span>(<span class="c-type">Client_t</span>* client) {
+    <span class="c-comment">// Clean Code & Industrial Standards</span>
+    <span class="c-type">System_t</span> sys = init_hardware(STM32_CORTEX_M);
+    configure_network(&amp;sys, CAN_BUS_500KBPS);
+    integrate_autosar_stack(&amp;sys);
+    
+    <span class="c-comment">// Mentorship & Client Defense Support</span>
+    prepare_student_for_defense(client-&gt;project);
+    ensure_satisfaction(GRADE_EXCELLENT);
+}</code></pre>
+                    <div class="card-footer">
+                        <span class="chip">AUTOSAR</span>
+                        <span class="chip">CANoe</span>
+                        <span class="chip">STM32</span>
+                        <span class="chip">FreeRTOS</span>
+                        <span class="chip">Learn++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="services_tag">الخدمات المتاحة</span>
+                <h2 class="section-title" data-i18n="services_title">حلول واستشارات متخصصة لطلاب ومهندسي الخليج</h2>
+                <p class="section-desc" data-i18n="services_desc">خدمات احترافية مرخصة ومصممة خصيصاً لتلبية متطلبات مشاريع التخرج، المقررات الجامعية، والبرمجيات الصناعية.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card featured">
+                    <div class="service-icon">🎓</div>
+                    <h3 data-i18n="s1_title">إشراف ودعم مشاريع التخرج (Embedded & IoT)</h3>
+                    <p data-i18n="s1_desc">مرافقة هندسية كاملة لفريق مشروعك من اختيار المكونات وتصميم المعمارية البرمجية، وكتابة الـ Firmware، وحتى إعدادك للمناقشة أمام اللجنة بثقة.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s1_p1">دعم شرائح STM32, ESP32, Arduino, AVR, Raspberry Pi</li>
+                        <li data-i18n="s1_p2">جلسات شرح ومراجعة للكود سطراً بسطر</li>
+                        <li data-i18n="s1_p3">مخططات هندسية كاملة (Block Diagrams & Flowcharts)</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">احجز استشارة مشروعك ←</a>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3 data-i18n="s2_title">تدريس مقررات الجامعات السعودية أونلاين</h3>
+                    <p data-i18n="s2_desc">شرح تفاعلي 1-on-1 لمناهج النظم المدمجة، المتحكمات الدقيقة، لغة Embedded C/C++، وهندسة الإلكترونيات لطلاب جامعات المملكة.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s2_p1">تبسيط النظريات وتطبيقها معملياً عبر المحاكيات (Proteus, Keil)</li>
+                        <li data-i18n="s2_p2">حل تمارين وشيتات المعامل والتحضير للاختبارات</li>
+                        <li data-i18n="s2_p3">مرونة كاملة في المواعيد بتوقيت مكة المكرمة</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">احجز جلسة شرح ←</a>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3 data-i18n="s3_title">تطوير وبرمجة كود المتحكمات (Firmware Dev)</h3>
+                    <p data-i18n="s3_desc">كتابة تعريفات العتاد (Drivers) وبناء أنظمة تحكم كاملة تعتمد على FreeRTOS لمتحكمات ARM Cortex-M وESP32 بتوثيق احترافي.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s3_p1">كتابة Bare-metal & HAL drivers نظيفة وقابلة لإعادة الاستخدام</li>
+                        <li data-i18n="s3_p2">تفعيل بروتوكولات الاتصال: CAN, SPI, I2C, UART, BLE, WiFi</li>
+                        <li data-i18n="s3_p3">ربط حساسات إنترنت الأشياء ولوحات التحكم السحابية</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">اطلب برمجة جهازك ←</a>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3 data-i18n="s4_title">فحص وتصحيح أعطال الكود (Debugging & Optimization)</h3>
+                    <p data-i18n="s4_desc">حل المشاكل المعقدة في النظم المدمجة: تهنيج المعالج (HardFault)، تداخل المقاطعات (Interrupts)، ومشاكل التوقيت وإدارة الذاكرة.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s4_p1">تحليل الأسباب الجذرية (Root-Cause Analysis)</li>
+                        <li data-i18n="s4_p2">تحسين الأداء وتقليل استهلاك الذاكرة (RAM/Flash)</li>
+                        <li data-i18n="s4_p3">فحص أعطال خطوط I2C/SPI العالقة</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">أصلح مشكلة كودك ←</a>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">🚗</div>
+                    <h3 data-i18n="s5_title">استشارات شبكات السيارات وAUTOSAR</h3>
+                    <p data-i18n="s5_desc">خبرة عميقة مستمدة من كبرى شركات السيارات العالمية (Valeo) في شبكات CAN, LIN, UDS, وتحليل الإشارات عبر Vector CANoe.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s5_p1">تصميم وتكوين شبكات CAN Bus وحل مشاكل Bus-Off</li>
+                        <li data-i18n="s5_p2">تكوين طبقات AUTOSAR (Memory, Comm, Crypto)</li>
+                        <li data-i18n="s5_p3">تحليل ملفات الـ Trace وفحص الحزم البرمجية</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">احجز استشارة سيارات ←</a>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">🤖</div>
+                    <h3 data-i18n="s6_title">وكلاء الذكاء الاصطناعي وأتمتة الأعمال (AI Agents)</h3>
+                    <p data-i18n="s6_desc">بناء وتطوير وكلاء ذكاء اصطناعي وتدفقات أتمتة عبر WhatsApp وn8n وPython لخدمة المتاجر والشركات في منطقة الخليج.</p>
+                    <ul class="service-points">
+                        <li data-i18n="s6_p1">بوتات واتساب تفاعلية لتأكيد الطلبات وخدمة العملاء</li>
+                        <li data-i18n="s6_p2">تدفقات n8n وLangGraph الذكية</li>
+                        <li data-i18n="s6_p3">تكامل مع أنظمة التجارة وقواعد البيانات</li>
+                    </ul>
+                    <a href="#contact" class="card-link" data-i18n="service_cta">اطلب أتمتة أعمالك ←</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="projects_tag">سابقة الأعمال</span>
+                <h2 class="section-title" data-i18n="projects_title">مشاريع مفتوحة المصدر ونماذج صناعية</h2>
+                <p class="section-desc" data-i18n="projects_desc">نماذج من الأكواد والمشاريع التي تم تنفيذها، متاحة للتحقق عبر GitHub.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-tag">Valeo Sponsored • Automotive</div>
+                    <h3>V2V Collision Avoidance System</h3>
+                    <p data-i18n="p1_desc">نظام متقدم لتفادي الحوادث المرورية يحتوي على 5 أنظمة فرعية منسقة (EEBL, FCW, BSW, DNPW, IMA) مبني على Embedded Linux (Yocto) ومحاكاة شبكات CAN عبر CANoe.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>Embedded Linux</span>
+                        <span>Yocto</span>
+                        <span>CANoe</span>
+                        <span>V2V</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/Collision_Avoidance_Project" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-tag">Industrial • Safety</div>
+                    <h3>Pressure Detection & Alarm System</h3>
+                    <p data-i18n="p2_desc">نظام تحكم وإنذار لغرف الضغط العالي مع مواصفات هندسية دقيقة (Statecharts, Sequence Diagrams, Requirements Traceability) ومحاكاة برمجية كاملة.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>Software Architecture</span>
+                        <span>Proteus</span>
+                        <span>Simulink</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/Pressure_Detection_Project" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-tag">Bare-metal Drivers</div>
+                    <h3>STM32F103 (ARM Cortex-M3) Driver Suite</h3>
+                    <p data-i18n="p3_desc">حزمة تعريفات عتاد كاملة من الصفر (Bare-metal بدون مكتبات جاهزة) تشمل وحدات RCC, GPIO, EXTI, NVIC, USART, SPI, I2C مع أمثلة تطبيقية.</p>
+                    <div class="tech-stack">
+                        <span>Embedded C</span>
+                        <span>ARM Cortex-M3</span>
+                        <span>Registers</span>
+                        <span>Bare-metal</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/STM32F103C6_Drivers" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-tag">AVR Architecture</div>
+                    <h3>ATMega32 Full Drivers & Projects</h3>
+                    <p data-i18n="p4_desc">مكتبات شاملة لمتحكم ATmega32 تغطي كافة الـ Peripherals (Timers, PWM, ADC, Watchdog, EEPROM, SPI, UART, I2C) مع مشاريع عملية.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>AVR ATmega32</span>
+                        <span>Drivers</span>
+                        <span>Proteus</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/ATMega32_Drivers" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-tag">AUTOSAR Standards</div>
+                    <h3>AUTOSAR MCAL Drivers (DIO & PORT)</h3>
+                    <p data-i18n="p5_desc">تطوير تعريفات العتاد لطبقة الـ MCAL متوافقة مع معايير اتحاد صناعة برمجيات السيارات العالمي AUTOSAR بمواصفات رسمية.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>AUTOSAR</span>
+                        <span>MCAL</span>
+                        <span>Automotive Standards</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/AUTOSAR_PROJECT" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-tag">RTOS & Scheduling</div>
+                    <h3>RTOS Stack & Task Scheduler</h3>
+                    <p data-i18n="p6_desc">تصميم مجدول مهام (Task Scheduler) خفيف الوزن لأنظمة التشغيل في الوقت الحقيقي، يدعم الأولويات ومزامنة المهام وإدارة الموارد.</p>
+                    <div class="tech-stack">
+                        <span>C</span>
+                        <span>RTOS</span>
+                        <span>Context Switching</span>
+                        <span>Scheduler</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mahmoud-Karem/RTOS-Stack-scheduler-" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching & Learn++ Section -->
+    <section id="teaching" class="section">
+        <div class="container">
+            <div class="teaching-box">
+                <div class="teaching-content">
+                    <span class="section-tag">قناة Learn++ والتعليم الأكاديمي</span>
+                    <h2 data-i18n="teach_title">نبسط العلوم الهندسية المعقدة لآلاف الطلاب والمهندسين</h2>
+                    <p data-i18n="teach_desc">
+                        انطلاقاً من الإيمان بأن فهم الأنظمة المدمجة يبدأ من المعمارية العتادية الأساسية وحتى أعلى طبقات البرمجيات؛ أطلقت قناة Learn++ على يوتيوب والتي تقدم دبلومات متكاملة في النظم المدمجة، وشرحاً لمناهج كليات الهندسة والاتصالات. كما قدمت دورات مكثفة لطلاب في جامعات مرموقة بالمملكة العربية السعودية ومصر.
+                    </p>
+                    <div class="teaching-features">
+                        <div class="feat">
+                            <strong>🎥 شرح تطبيقي عملي:</strong> نكتب الكود سطراً بسطر ونفحص الإشارات على المحاكي.
+                        </div>
+                        <div class="feat">
+                            <strong>🎓 تأهيل كامل لمناقشة المشاريع:</strong> ندرب الطالب على كيفية إقناع لجان التحكيم والرد على الأسئلة الدقيقة.
+                        </div>
+                        <div class="feat">
+                            <strong>🇸🇦 تغطية مناهج الجامعات السعودية:</strong> مواءمة كاملة مع مقررات جامعات الملك سعود، الملك عبد العزيز، وأم القرى.
+                        </div>
+                    </div>
+                    <div class="teaching-cta">
+                        <a href="https://www.youtube.com/@learnplusplus-mahmoudkarem" target="_blank" rel="noopener" class="btn-primary">زيارة القناة على YouTube</a>
+                        <a href="#contact" class="btn-secondary" data-i18n="book_session">حجز جلسة تدريس خاصة</a>
+                    </div>
+                </div>
+                <div class="teaching-banner">
+                    <div class="yt-preview-card">
+                        <div class="yt-header">
+                            <span class="yt-badge">YouTube Channel</span>
+                            <h4>Learn++ Mahmoud Karem</h4>
+                        </div>
+                        <p class="yt-tagline">شروحات دبلومات Embedded Systems ومواد هندسة الاتصالات والإلكترونيات</p>
+                        <div class="yt-topics">
+                            <span>Embedded C</span>
+                            <span>ARM Cortex-M</span>
+                            <span>AVR</span>
+                            <span>RTOS</span>
+                            <span>IoT</span>
+                            <span>Electronics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="exp_tag">المسيرة المهنية</span>
+                <h2 class="section-title" data-i18n="exp_title">الخبرة العملية والتعليم الأكاديمي</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">يناير 2026 — حتى الآن</div>
+                    <div class="timeline-content">
+                        <h3>Embedded SW Engineer</h3>
+                        <h4>Si-Vision (MLI Team) — القاهرة</h4>
+                        <p data-i18n="exp_sivision">التحقق البرمجي من دوال تعلم الآلة الحسابية على معالجات NPU، والتأكد من مطابقة النماذج الرياضية بين البيئات المحاكية والسيليكون الفعلي مع تحليل الأسباب الجذرية للأعطال.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">أغسطس 2023 — يناير 2026</div>
+                    <div class="timeline-content">
+                        <h3>Embedded SW Engineer & CI Champion</h3>
+                        <h4>شركة فاليو العالمية (Valeo) — VCore-THS EDC Team</h4>
+                        <p data-i18n="exp_valeo">تكوين ودمج طبقات AUTOSAR (Memory, Communication, Crypto)، قيادة مبادرات التكامل المستمر (CI)، ابتكار أداة إدارة حزم C/C++ الداخلية Vintgo، واختبار شبكات السيارات عبر CANoe وDaVinci.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 — 2023</div>
+                    <div class="timeline-content">
+                        <h3>بكالوريوس هندسة الإلكترونيات والاتصالات الكهربية</h3>
+                        <h4>كلية الهندسة — جامعة الأزهر بالقاهرة</h4>
+                        <p data-i18n="exp_azhar"><strong>المركز الأول على الدفعة</strong> بتقدير ممتاز مع مرتبة الشرف. مشروع التخرج نظام V2V لتفادي حوادث الطرق برعاية شركة Valeo بتقدير ممتاز.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="contact_tag">ابدأ الآن</span>
+                <h2 class="section-title" data-i18n="contact_title">جاهز للبدء في مشروعك أو حجز استشارتك؟</h2>
+                <p class="section-desc" data-i18n="contact_desc">تواصل معي مباشرة أو عبر منصات العمل الحر الرسمية. أرد خلال ساعات قليلة.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="c-icon">📧</div>
+                    <h3>البريد الإلكتروني</h3>
+                    <p>للتعاقدات والاستشارات والمشاريع المباشرة</p>
+                    <a href="mailto:mahmoudkarem.me@gmail.com" class="c-link">mahmoudkarem.me@gmail.com</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="c-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <p>للتواصل المهني واستعراض التوصيات</p>
+                    <a href="https://www.linkedin.com/in/mahmoud-karem-zamel" target="_blank" rel="noopener" class="c-link">linkedin.com/in/mahmoud-karem-zamel ↗</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="c-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <p>لتصفح الأكواد والمكتبات والمشاريع المفتوحة</p>
+                    <a href="https://github.com/Mahmoud-Karem" target="_blank" rel="noopener" class="c-link">github.com/Mahmoud-Karem ↗</a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="c-icon">🇸🇦</div>
+                    <h3>منصات العمل الحر (مستقل وخمسات)</h3>
+                    <p>لضمان حقوق الدفع والتعامل المالي الموثق</p>
+                    <span class="c-hint">اطلب خدماتي عبر حسوب / خمسات / مستقل فور تفعيل الطلبات</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 المهندس محمود كارم زامل (Mahmoud Karem Zamel). جميع الحقوق محفوظة.</p>
+            <p class="footer-sub">صُمم وطُوّر في بيئة هندسية متكاملة لخدمة المبتكرين والطلاب ورواد الأعمال في العالم العربي والخليج.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
