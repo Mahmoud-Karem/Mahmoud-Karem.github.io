@@ -6,7 +6,7 @@ const translations = {
         nav_teaching: "التدريس وLearn++",
         nav_experience: "الخبرة المهنية",
         nav_contact: "تواصل معي",
-        hero_badge: "⚡ مهندس برمجيات مدمجة وسيارات | فاليو وساي فيجن سابقاً",
+        hero_badge: "⚡ مهندس برمجيات مدمجة",
         hero_title: "أساعدك في بناء وتطوير <span class=\"highlight\">الأنظمة المدمجة</span> وإتقان كود مشاريع التخرج باحترافية",
         hero_desc: "خريج هندسة الإلكترونيات والاتصالات (المركز الأول على الدفعة بتقدير ممتاز مع مرتبة الشرف)، مهندس برمجيات نظم مدمجة للسيارات Tier-1 (Valeo & Si-Vision)، ومؤسس منصة Learn++ التعليمية. أقدم إشرافاً هندسياً لمشاريع التخرج، تدريساً لمقررات الجامعات السعودية، وتطويراً لأكواد STM32 وESP32 وAUTOSAR.",
         cta_hire: "ابدأ مشروعك أو استشارتك",
@@ -68,7 +68,7 @@ const translations = {
         exp_azhar: "المركز الأول على الدفعة بتقدير ممتاز مع مرتبة الشرف. مشروع التخرج نظام V2V لتفادي حوادث الطرق برعاية شركة Valeo بتقدير ممتاز.",
         contact_tag: "ابدأ الآن",
         contact_title: "جاهز للبدء في مشروعك أو حجز استشارتك؟",
-        contact_desc: "تواصل معي مباشرة أو عبر منصات العمل الحر الرسمية. أرد خلال ساعات قليلة."
+        contact_desc: "تواصل معي مباشرة. أرد خلال ساعات قليلة."
     },
     en: {
         brand_name: "Eng. Mahmoud Karem",
@@ -77,7 +77,7 @@ const translations = {
         nav_teaching: "Teaching & Learn++",
         nav_experience: "Experience",
         nav_contact: "Contact Me",
-        hero_badge: "⚡ Embedded & Automotive SW Engineer | Ex-Valeo & Si-Vision",
+        hero_badge: "⚡ Embedded Software Engineer",
         hero_title: "Engineering <span class=\"highlight\">Embedded Systems</span> & Mentoring Graduation Projects to Excellence",
         hero_desc: "B.S. in Electronics & Communication Engineering (First Place with Highest Honors). Production experience at Tier-1 automotive firms (Valeo, Si-Vision) and founder of Learn++. Providing technical mentorship for graduation projects, Saudi university tutoring, and STM32/ESP32 firmware development.",
         cta_hire: "Start a Project / Consultation",
@@ -139,7 +139,7 @@ const translations = {
         exp_azhar: "Graduated First in Class with Highest Honors (Excellent). Valeo-sponsored graduation project on V2V road safety.",
         contact_tag: "Get In Touch",
         contact_title: "Ready to Start Your Project or Book a Session?",
-        contact_desc: "Reach out directly or through verified freelance platforms. Typical response time is under a few hours."
+        contact_desc: "Reach out directly. Typical response time is under a few hours."
     }
 };
 
